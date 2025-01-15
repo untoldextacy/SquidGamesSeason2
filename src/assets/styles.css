@@ -1,0 +1,99 @@
+/* Game Container */
+.game-container {
+    background: #111; /* Dark background */
+    color: #fff; /* Light text for contrast */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Game Title */
+  .game-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f44336; /* Squid Game red */
+    margin-bottom: 20px;
+  }
+  
+  /* Choice Container */
+  .choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Player A Button */
+  .choice-button.player-a {
+    background-color: #4caf50; /* Green color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .choice-button.player-a:hover {
+    transform: scale(1.1);
+  }
+  
+  .choice-button.player-a:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Player B Button */
+  .choice-button.player-b {
+    background-color: #9c27b0; /* Pink color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .choice-button.player-b:hover {
+    transform: scale(1.1);
+  }
+  
+  .choice-button.player-b:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Start Minus One Button */
+  .action-button.start-minus-one {
+    background-color: #f44336; /* Red */
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .action-button.start-minus-one:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Result Phase */
+  .result-phase h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .action-button.restart-game {
+    background-color: #4caf50; /* Green */
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .action-button.restart-game:hover {
+    background-color: #388e3c;
+  }
+  
