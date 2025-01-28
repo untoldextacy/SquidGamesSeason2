@@ -8,7 +8,7 @@ import Navbar from './component/Navbar';
 
 const App = () => {
   return (
-    <Router basename='/SquidGamesSeason2'>
+    <Router>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
