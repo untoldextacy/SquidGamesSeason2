@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import GiHun from './assets/Seong_Gi-hun.jpg'
+import frontman from './assets/frontman.jpg'
+
 
 const characters = [
-  { name: "Player", image: "/assets/Seong_Gi-hun.jpg", marker: "X" },
-  { name: "Antagonist", image: "/assets/frontman.jpg", marker: "O" },
+  { name: "Player", image: GiHun, marker: "X" },
+  { name: "Antagonist", image: frontman, marker: "O" },
 ];
 
 const TicTacToe = () => {

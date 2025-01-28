@@ -5,9 +5,10 @@ import TicTacToe from './pages/TicTacToe';
 import RockPaperScissors from './pages/RockPaperScissors';
 import Navbar from './component/Navbar';
 
+
 const App = () => {
   return (
-    <Router>
+    <Router basename='/SquidGamesSeason2'>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
