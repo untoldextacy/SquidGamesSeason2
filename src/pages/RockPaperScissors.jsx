@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import playerAImage from "./assets/Seong_Gi-hun.jpg";
-import playerBImage from "./assets/recruit.jpg";
+import playerAImage from "/assets/Seong_Gi-hun.jpg";
+import playerBImage from "/assets/recruit.jpg";
 
 const options = ["rock", "paper", "scissors"];
 

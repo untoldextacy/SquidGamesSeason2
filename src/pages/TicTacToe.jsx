@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import GiHun from './assets/Seong_Gi-hun.jpg'
-import frontman from './assets/frontman.jpg'
+import GiHun from '/assets/Seong_Gi-hun.jpg'
+import frontman from '/assets/frontman.jpg'
 
 
 const characters = [

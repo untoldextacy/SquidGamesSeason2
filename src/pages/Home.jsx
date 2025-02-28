@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  // Use React Router for navigation
-import recruiterImage from './assets/recruit.jpg'; // Add your image path here
+import recruiterImage from '/assets/recruit.jpg'; // Add your image path here
 
 const Home = () => {
   return (

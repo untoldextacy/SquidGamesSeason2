@@ -8,14 +8,18 @@ export const AudioProvider = ({ children }) => {
 
     useEffect(() => {
         if (!audioRef.current) {
-            audioRef.current = new Audio("/assets/Way_Back_then.mp3"); // ✅ Ensure correct path
+            audioRef.current = new Audio("/assets/Way_Back_then.mp3"); // ✅ Correct path
             audioRef.current.loop = true;
         }
 
         const audio = audioRef.current;
 
-        if (isPlaying) {
+        const playAudio = () => {
             audio.play().catch((e) => console.error("Autoplay blocked:", e));
+        };
+
+        if (isPlaying) {
+            playAudio();
         } else {
             audio.pause();
         }
@@ -25,7 +29,9 @@ export const AudioProvider = ({ children }) => {
         };
     }, [isPlaying]);
 
-    const togglePlay = () => setIsPlaying((prev) => !prev);
+    const togglePlay = () => {
+        setIsPlaying((prev) => !prev);
+    };
 
     return (
         <AudioContext.Provider value={{ isPlaying, togglePlay }}>
